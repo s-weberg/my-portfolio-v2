@@ -1,6 +1,6 @@
 import React from 'react';
 
-const books = ({ name, screenshot, githubRepo, techUsed, shortWriteUp }) => {
+const books = ({ name, screenshot, githubRepo, shortWriteUp }) => {
   return (
     <div className="project-card">
       <h2>Book library</h2>

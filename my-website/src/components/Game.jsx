@@ -1,6 +1,6 @@
 import React from 'react';
 
-const game = ({ name, screenshot, githubRepo, techUsed, shortWriteUp }) => {
+const game = ({ name, screenshot, githubRepo, shortWriteUp }) => {
   return (
     <div className="project-card">
       <h2>Guess the number</h2>
