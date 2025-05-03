@@ -14,13 +14,8 @@ function App() {
         name="Todo App"
         screenshot="path/to/todo-screenshot.jpg"
         githubRepo="https://github.com/yourusername/todo-app"
-        techUsed="React, CSS"
-        shortWriteUp={{
-          whatItDoes: "A task management application.",
-          whatYouLearned: "State management with React.",
-          yourRole: "Sole developer",
-          challenges: "Handling dynamic lists."
-        }}
+        techUsed
+        shortWriteUp
       />
       <Books
         name="Weather App"

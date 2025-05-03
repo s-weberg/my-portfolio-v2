@@ -5,13 +5,18 @@ const books = ({ name, screenshot, githubRepo, techUsed, shortWriteUp }) => {
     <div className="project-card">
       <h2>{name}</h2>
       <img src={screenshot} alt={`${name} screenshot`} />
-      <p><strong>GitHub:</strong> <a href={githubRepo} target="_blank" rel="noopener noreferrer">{githubRepo}</a></p>
-      <p><strong>Tech Used:</strong> {techUsed}</p>
+      <h3>GitHub:</h3>
+      <p><a href={githubRepo} target="_blank" >{githubRepo}</a></p>
+      
       <div className="write-up">
-        <p><strong>What the project does:</strong> {shortWriteUp.whatItDoes}</p>
-        <p><strong>What you learned:</strong> {shortWriteUp.whatYouLearned}</p>
-        <p><strong>Your role:</strong> {shortWriteUp.yourRole}</p>
-        <p><strong>Challenges solved:</strong> {shortWriteUp.challenges}</p>
+        <h3>What the project does: {shortWriteUp.whatItDoes}</h3>
+        <p>This is a book library 
+        </p>
+        <h3>What you learned: {shortWriteUp.whatYouLearned}</h3>
+        <p>I have learned how make a function using switch and while.</p>
+        
+        <h3>Challenges solved: {shortWriteUp.challenges}</h3>
+        <p>I had some issues with the functions, but thanks to Bonnie I was able to solve the problem. </p>
       </div>
     </div>
   );

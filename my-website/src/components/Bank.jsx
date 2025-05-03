@@ -5,13 +5,19 @@ const bank = ({ name, screenshot, githubRepo, techUsed, shortWriteUp }) => {
     <div className="project-card">
       <h2>{name}</h2>
       <img src={screenshot} alt={`${name} screenshot`} />
-      <p><strong>GitHub:</strong> <a href={githubRepo} target="_blank" rel="noopener noreferrer">{githubRepo}</a></p>
-      <p><strong>Tech Used:</strong> {techUsed}</p>
+      <h3>GitHub: <a href={githubRepo} target="_blank" rel="noopener noreferrer">{githubRepo}</a></h3>
+      
       <div className="write-up">
-        <p><strong>What the project does:</strong> {shortWriteUp.whatItDoes}</p>
-        <p><strong>What you learned:</strong> {shortWriteUp.whatYouLearned}</p>
-        <p><strong>Your role:</strong> {shortWriteUp.yourRole}</p>
-        <p><strong>Challenges solved:</strong> {shortWriteUp.challenges}</p>
+        <h3>What the project does: {shortWriteUp.whatItDoes}</h3>
+        <p>This project allows the user to sign in to the bank account. When inside the bank, they will
+          have different choices. They can see their balance, make a deposit, make a withdrawal and see 
+          the account name. 
+        </p>
+        <h3>What you learned: {shortWriteUp.whatYouLearned}</h3>
+        <p>I have learned how make a function using switch and while.</p>
+        
+        <h3>Challenges solved: {shortWriteUp.challenges}</h3>
+        <p>I had some issues with the functions, but thanks to Bonnie I was able to solve the problem. </p>
       </div>
     </div>
   );
