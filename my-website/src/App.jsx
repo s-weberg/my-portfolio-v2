@@ -11,35 +11,25 @@ function App() {
     <div className="App">
       <h1>My Portfolio</h1>
       <Bank
-        name="Todo App"
-        screenshot="path/to/todo-screenshot.jpg"
-        githubRepo="https://github.com/yourusername/todo-app"
+        name
+        screenshot="src/assets/dollar.svg"
+        githubRepo="https://github.com/s-weberg/Bank-account"
         techUsed
         shortWriteUp
       />
       <Books
-        name="Weather App"
-        screenshot="path/to/weather-screenshot.jpg"
-        githubRepo="https://github.com/yourusername/weather-app"
-        techUsed="React, API"
-        shortWriteUp={{
-          whatItDoes: "Displays weather data based on location.",
-          whatYouLearned: "API integration.",
-          yourRole: "Lead developer",
-          challenges: "Error handling for API calls."
-        }}
+        name
+        screenshot="src/assets/books.svg"
+        githubRepo="https://github.com/s-weberg/books"
+        techUsed
+        shortWriteUp
       />
       <Game
-        name="E-commerce Site"
-        screenshot="path/to/ecommerce-screenshot.jpg"
-        githubRepo="https://github.com/yourusername/ecommerce-site"
-        techUsed="React, Node.js"
-        shortWriteUp={{
-          whatItDoes: "An online shopping platform.",
-          whatYouLearned: "Backend integration.",
-          yourRole: "Collaborator",
-          challenges: "Optimizing load times."
-        }}
+        name
+        screenshot="src/assets/game.svg"
+        githubRepo="https://github.com/s-weberg/Game"
+        techUsed
+        shortWriteUp
       />
     </div>
   );

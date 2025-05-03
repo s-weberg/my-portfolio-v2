@@ -3,10 +3,10 @@ import React from 'react';
 const game = ({ name, screenshot, githubRepo, techUsed, shortWriteUp }) => {
   return (
     <div className="project-card">
-      <h2>{name}</h2>
+      <h2>Guess the number</h2>
       <img src={screenshot} alt={`${name} screenshot`} />
-      <h3>GitHub: <a href={githubRepo} target="_blank" rel="noopener noreferrer">{githubRepo}</a></h3>
-      
+      <h3>GitHub:</h3>
+      <a href={githubRepo} target="_blank">{githubRepo}</a>      
       <div className="write-up">
         <h3>What the project does: {shortWriteUp.whatItDoes}</h3>
         <p>This project was really fun! It is a game where you are going to write the 
