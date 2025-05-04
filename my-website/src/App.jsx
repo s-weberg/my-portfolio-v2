@@ -3,9 +3,23 @@ import './App.css'
 import React from 'react';
 import Bank from './components/bank';
 import Books from './components/Books';
-import Game from './components/Game';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+
+function App() {
+  return <>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/about" element={<About/>}/>
+  </Routes>
+  </BrowserRouter>
+  </>
+}
 
 
+/*
 function App() {
   return (
     <div className="App">
@@ -33,6 +47,6 @@ function App() {
       />
     </div>
   );
-}
+}*/
 
 export default App;
