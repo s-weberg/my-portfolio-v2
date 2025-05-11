@@ -1,3 +1,5 @@
+import React, {useState} from 'react';
+
 function About() {
     return <div class="card">
         <h1>About me</h1>

@@ -3,11 +3,27 @@ import './App.css'
 import React from 'react';
 import Bank from './components/bank';
 import Books from './components/Books';
+import Game from './components/Game';
+import Popup from '../components/Popup';
+
+
+
+/*
+const Project = ({ project, openPopup }) => {
+  return (
+    <div className="project-card" onClick={() => openPopup(project)}>
+      <h3>{project.name}</h3>
+      <img src={project.screenshot} alt={`${project.name} screenshot`} style={{ maxWidth: '200px' }} />
+    </div>
+  );
+};
+
+export default Project;*/
 
 
 function Projects() {
     return (
-      <div className="App">
+      <div className="App" onClick={() => openPopup(Projects)}>
         <h1>My Portfolio</h1>
         <Bank
           name
