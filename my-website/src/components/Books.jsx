@@ -1,6 +1,6 @@
 import React from 'react';
 
-const books = ({ name, screenshot, githubRepo, shortWriteUp }) => {
+const Books = ({ name, screenshot, githubRepo, shortWriteUp }) => {
   return (
     <div className="project-card">
       <h2>Book library</h2>
@@ -26,4 +26,4 @@ const books = ({ name, screenshot, githubRepo, shortWriteUp }) => {
   );
 };
 
-export default books;
+export default Books;

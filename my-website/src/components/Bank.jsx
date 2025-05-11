@@ -1,6 +1,6 @@
 import React from 'react';
 
-const bank = ({ name, screenshot, githubRepo, shortWriteUp }) => {
+const Bank = ({ name, screenshot, githubRepo, shortWriteUp }) => {
   return (
     <div className="project-card">
       <h2>Bank account</h2>
@@ -24,4 +24,4 @@ const bank = ({ name, screenshot, githubRepo, shortWriteUp }) => {
   );
 };
 
-export default bank;
+export default Bank;

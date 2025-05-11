@@ -1,7 +1,7 @@
 
 import './App.css'
 import React from 'react';
-import Bank from './components/bank';
+import Bank from './components/Bank';
 import Books from './components/Books';
 import Game from './components/Game';
 import Popup from '../components/Popup';

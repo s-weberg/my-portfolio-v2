@@ -1,6 +1,6 @@
 import React from 'react';
 
-const game = ({ name, screenshot, githubRepo, shortWriteUp }) => {
+const Game = ({ name, screenshot, githubRepo, shortWriteUp }) => {
   return (
     <div className="project-card">
       <h2>Guess the number</h2>
@@ -24,4 +24,4 @@ const game = ({ name, screenshot, githubRepo, shortWriteUp }) => {
   );
 };
 
-export default game;
+export default Game;

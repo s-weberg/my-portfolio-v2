@@ -1,12 +1,12 @@
 
 import './App.css'
-import React, { useState } from 'react';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Navbar from './Navbar';
+
 
 
 
