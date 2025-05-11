@@ -12,14 +12,12 @@ function Popup({ project, onClose }) {
         </button>
         <h2>{project.name}</h2>
         <img src={project.screenshot} alt={project.name} className="popup-image" />
-        <p><strong>GitHub Repo:</strong> <a href={project.repo}>{project.repo}</a></p>
-        <p><strong>Technologies:</strong> {project.tech.join(', ')}</p>
+        <p><strong>GitHub repositories:</strong> <a target="_blank" href={project.repo}>s-weberg/my-portfolio</a></p>
+        <p><strong>Technologies used:</strong> {project.tech}</p>
         <div className="writeup">
-          <h3>Project Details</h3>
-          <p><strong>What it does:</strong> {project.writeup.description}</p>
-          <p><strong>What I learned:</strong> {project.writeup.learned}</p>
-          <p><strong>My role:</strong> {project.writeup.role}</p>
-          <p><strong>Challenges solved:</strong> {project.writeup.challenges}</p>
+          <h2>Description</h2>
+          <p>{project.writeup.description}</p>
+          
         </div>
       </div>
     </div>

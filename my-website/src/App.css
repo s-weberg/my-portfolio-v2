@@ -18,11 +18,12 @@ h1 {
 
 h2 {
   color: #510438;
+  font-size: 30px;
 }
 
 h3 {
-  color: #510438;
-  font-size: 18px;
+  color: #ffffff;
+  font-size: 25px;
 }
 
 p {
@@ -57,14 +58,16 @@ nav ul {
 
 
 .card {
-  border:  #510438 solid 1px;
+  border:  #026835 solid 2px;
   padding: 30px;
   margin-top: 30px;
-  background-color: #b992ad;
+  background-color: rgb(104, 155, 115);
 }
 
 button {
-  border: #510438 solid 1px;
+  border: #026835 solid 2px;
+  background-color: rgb(104, 155, 115);
+  margin: 20px 0px 20px 0px;
 }
 
 .read-the-docs {
@@ -72,19 +75,23 @@ button {
 }
 
 .project-card {
-  border: 1px solid #6c074c;
+  border: 1px solid #026835;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   width: 600px;
-  background-color: pink;
+  background-color: rgb(104, 155, 115);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+
 }
 
 .project-card img {
-  max-width: 100%;
+  max-width: 100%;  
 }
-
-
 
 
 .popup-overlay {
@@ -108,7 +115,7 @@ button {
   width: 90%;
   position: relative;
   max-height: 80vh;
-  overflow-y: auto;
+
 }
 
 .close-button {
@@ -127,24 +134,15 @@ button {
   margin: 1rem 0;
 }
 
-.writeup {
-  margin-top: 1rem;
-}
-
 .project-card {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  margin: 1rem 0;
+  border: 2px solid #026835;
+  margin: 20px 0px 20px 0px;
+  padding: 30px;
   cursor: pointer;
   transition: transform 0.2s;
+  width: 450px;
 }
 
 .project-card:hover {
   transform: scale(1.05);
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
 }

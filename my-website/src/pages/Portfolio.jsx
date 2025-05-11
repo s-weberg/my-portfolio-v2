@@ -9,6 +9,8 @@ import Popup from '../components/Popup';
 function Portfolio() {
     const [showProjects, setShowProjects] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
+
+  
   
     /*
     const projects = [
@@ -22,26 +24,33 @@ function Portfolio() {
         id: bank,
         name: 'Bank account',
         screenshot: "src/assets/dollar.svg",
-        repo: 'https://github.com/username/project1',
-        tech: ['React', 'CSS', 'JavaScript'],
+        repo: 'https://github.com/s-weberg/my-portfolio-v2/tree/s-weberg/my-portfolio/popup/my-website',
+        tech: 'React, CSS, JavaScript',
         writeup: {
-          description: 'A web app for task management.',
-          learned: 'Learned state management with hooks.',
-          role: 'Sole developer',
-          challenges: 'Implemented responsive design.',
+        description: 'This project allows the user to log in to their bank account. Once logged in, they will find that it has various options. They can view their balance, make a deposit, make a withdrawal, and see the account name. ',
         },
       },
       {
         id: books,
         name: 'Book library',
         screenshot: "src/assets/books.svg",
-        repo: 'https://github.com/username/project2',
-        tech: ['React', 'Node.js'],
+        repo: 'https://github.com/s-weberg/my-portfolio-v2/tree/s-weberg/my-portfolio/popup/my-website',
+        tech: 'React, CSS, JavaScript',
         writeup: {
-          description: 'A chat application.',
-          learned: 'Real-time updates with WebSockets.',
-          role: 'Frontend developer',
-          challenges: 'Optimized performance for real-time data.',
+        description: 'This is a book library where the user can type in different books and the author of the books. The user can mark them as read or unread to create a list.',
+        
+        },
+      },
+
+      {
+        id: game,
+        name: 'Book library',
+        screenshot: "src/assets/game.svg",
+        repo: 'https://github.com/s-weberg/my-portfolio-v2/tree/s-weberg/my-portfolio/popup/my-website',
+        tech: 'React, CSS, JavaScript',
+        writeup: {
+        description: 'This project was really fun! It is a game where you are going to write the same word that shows up, if it is correct, you will get more time for next word.',
+        
         },
       },
     ];
@@ -50,6 +59,7 @@ function Portfolio() {
     return (
       <div>
         <h1>Portfolio</h1>
+        <p>This is my portfolio. Check out my projects!</p>
         <button onClick={() => setShowProjects(!showProjects)}>
           {showProjects ? 'Hide Projects' : 'Show Projects'}
         </button>
