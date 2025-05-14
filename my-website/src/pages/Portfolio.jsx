@@ -9,9 +9,19 @@ import Popup from '../components/Popup';
 function Portfolio() {
     const [showProjects, setShowProjects] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
-    const [searchQuery, setSearchQuery] = useState("");
+ 
+    {preview && (
+      <div className="Flex justify-center mt-8 max-w-7X1 mx-auto">
+        <input
+        type="text"
+        className="border border-gray-300 rounded-lg px-4 py-2 w-1/3"
+        placeholder="Search..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        />
 
-  
+      </div>
+    )}
     /*
     const projects = [
         {id: bank, screenshot: "src/assets/dollar.svg", title: 'Bank account', description: 'This project allows the user to log in to their bank account'},
