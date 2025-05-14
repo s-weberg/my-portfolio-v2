@@ -9,7 +9,7 @@ import Popup from '../components/Popup';
 function Portfolio() {
     const [showProjects, setShowProjects] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
-
+    const [searchQuery, setSearchQuery] = useState("");
   
   
     /*
