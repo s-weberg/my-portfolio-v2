@@ -55,7 +55,11 @@ nav ul {
   gap: 20px;
 }
 
-
+.search-bar {
+  display: flex;
+  border: 2px solid #510438;
+  border-radius: 3px;
+}
 
 .card {
   border:  #026835 solid 2px;

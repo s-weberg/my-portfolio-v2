@@ -10,18 +10,9 @@ function Portfolio() {
     const [showProjects, setShowProjects] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
  
-    {preview && (
-      <div className="Flex justify-center mt-8 max-w-7X1 mx-auto">
-        <input
-        type="text"
-        className="border border-gray-300 rounded-lg px-4 py-2 w-1/3"
-        placeholder="Search..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        />
+    const [searchQuery, setSearchQuery] = useState("");
 
-      </div>
-    )}
+
     /*
     const projects = [
         {id: bank, screenshot: "src/assets/dollar.svg", title: 'Bank account', description: 'This project allows the user to log in to their bank account'},
@@ -54,7 +45,7 @@ function Portfolio() {
 
       {
         id: game,
-        name: 'Book library',
+        name: 'Game',
         screenshot: "src/assets/game.svg",
         repo: 'https://github.com/s-weberg/my-portfolio-v2/tree/s-weberg/my-portfolio/popup/my-website',
         tech: 'React, CSS, JavaScript',
@@ -64,41 +55,48 @@ function Portfolio() {
         },
       },
     ];
+        //This will filter projects by name, based on the search query
+        const filteredProjects = projects.filter((project) =>
+        project.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
 
 
     return (
-      <div>
-        <h1>Portfolio</h1>
-        <p>This is my portfolio. Check out my projects!</p>
+    <div>
+      <h1>Portfolio</h1>
+      <p>This is my portfolio. Check out my projects!</p>
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="search-bar"
+      />
+      <button onClick={() => setShowProjects(!showProjects)}>
+        {showProjects ? 'Hide Projects' : 'Show Projects'}
+      </button>
+      {showProjects && (
+        <div className="projects">
+          {filteredProjects.map((project) => (
+            <div
+              key={project.id}
+              className="project-card"
+              onClick={() => setSelectedProject(project)}
+            >
+              <h3>{project.name}</h3>
+              <img src={project.screenshot} alt={project.name} width="100" />
+            </div>
+          ))}
+        </div>
+      )}
+      {selectedProject && (
+        <Popup project={selectedProject} onClose={() => setSelectedProject(null)} />
+      )}
+    </div>
+  );
+}
 
-        
-        <button onClick={() => setShowProjects(!showProjects)}>
-          {showProjects ? 'Hide Projects' : 'Show Projects'}
-        </button>
-        {showProjects && (
-          <div className="projects">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className="project-card"
-                onClick={() => setSelectedProject(project)}
-              >
-                <h3>{project.name}</h3>
-                <img src={project.screenshot} alt={project.name} width="100" />
-              </div>
-            ))}
-          </div>
-        )}
-        {selectedProject && (
-          <Popup project={selectedProject} onClose={() => setSelectedProject(null)} />
-        )}
-      </div>
-    );
-  }
-
-
-  
-  export default Portfolio;
+export default Portfolio;
 
 
   /*
