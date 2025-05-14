@@ -11,6 +11,10 @@ function Portfolio() {
     const [selectedProject, setSelectedProject] = useState(null);
     const [searchQuery, setSearchQuery] = useState("");
   
+    const filteredProjects = projects.filter((project) =>
+    project.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    project.tech.some((tech) => tech.toLowerCase().includes(searchQuery.toLowerCase()))
+    );
   
     /*
     const projects = [
@@ -60,6 +64,8 @@ function Portfolio() {
       <div>
         <h1>Portfolio</h1>
         <p>This is my portfolio. Check out my projects!</p>
+
+        
         <button onClick={() => setShowProjects(!showProjects)}>
           {showProjects ? 'Hide Projects' : 'Show Projects'}
         </button>
@@ -83,6 +89,8 @@ function Portfolio() {
       </div>
     );
   }
+
+
   
   export default Portfolio;
 
